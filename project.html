@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Paul Olutunmbi | DevHumble</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .project-card {
+      transition: all 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
+
+  <!-- Fixed Navigation -->
+  <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-transform">
+          DevHumble
+        </a>
+        
+        <ul class="hidden md:flex gap-8 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+          <li><a href="project.html" class="text-blue-400 hover:text-blue-300 transition-colors">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="flex flex-col gap-3 text-sm font-medium">
+          <li><a href="index.html" class="block hover:text-blue-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="block hover:text-blue-400 transition-colors">About</a></li>
+          <li><a href="project.html" class="block text-blue-400 hover:text-blue-300 transition-colors">Projects</a></li>
+          <li><a href="contact.html" class="block hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="pt-32 pb-16 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto text-center fade-in-up">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        My Projects
+      </h1>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+        A collection of my web development projects showcasing my skills in HTML, CSS, Tailwind, and JavaScript
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-16 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Project 1: BookDiverse -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl">
+          <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-700 flex items-center justify-center">
+            <i class="fas fa-book-open text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-blue-400">BookDiverse</h3>
+            <p class="text-gray-400 mb-4">
+              A comprehensive book discovery platform featuring a clean, modern interface for browsing and exploring diverse literary collections. 
+              Built with HTML, CSS, and JavaScript, this project demonstrates responsive design principles and interactive user experiences. 
+              The platform includes features like book search, categorization, and detailed book information displays.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">HTML</span>
+              <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">CSS</span>
+              <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">JavaScript</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Paulolutunmbi/project_bookdiverse-SQI" target="_blank" class="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://project-bookdiverse-sqi.vercel.app/" target="_blank" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Web.dev Clone -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl">
+          <div class="h-48 bg-gradient-to-br from-green-600 to-teal-700 flex items-center justify-center">
+            <i class="fas fa-clone text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-green-400">Web.dev - Clone</h3>
+            <p class="text-gray-400 mb-4">
+              A pixel-perfect recreation of Google's Web.dev platform, showcasing advanced CSS layout techniques and attention to detail. 
+              This project demonstrates proficiency in semantic HTML, modern CSS Grid and Flexbox, and responsive design patterns. 
+              The clone replicates the clean, professional aesthetic of the original while maintaining full responsiveness across all devices.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-xs">HTML</span>
+              <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-xs">CSS</span>
+              <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-xs">Responsive</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Paulolutunmbi/web-dev-clone" target="_blank" class="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://web-dev-clone-jade.vercel.app" target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Animation -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl">
+          <div class="h-48 bg-gradient-to-br from-pink-600 to-red-700 flex items-center justify-center">
+            <i class="fas fa-magic text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-pink-400">Web.dev - Animation</h3>
+            <p class="text-gray-400 mb-4">
+              An interactive showcase of CSS animations and transitions, featuring smooth, engaging visual effects. 
+              This project explores advanced animation techniques including keyframes, transforms, and timing functions. 
+              It demonstrates the power of CSS for creating dynamic, eye-catching user interfaces without relying on heavy JavaScript libraries.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-pink-900 text-pink-300 px-3 py-1 rounded-full text-xs">CSS Animation</span>
+              <span class="bg-pink-900 text-pink-300 px-3 py-1 rounded-full text-xs">HTML</span>
+              <span class="bg-pink-900 text-pink-300 px-3 py-1 rounded-full text-xs">JavaScript</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Paulolutunmbi/Animation" target="_blank" class="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://animation-hazel-rho.vercel.app" target="_blank" class="flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Solar System -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl">
+          <div class="h-48 bg-gradient-to-br from-indigo-600 to-blue-800 flex items-center justify-center">
+            <i class="fas fa-globe text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-indigo-400">Web.dev - Solar System</h3>
+            <p class="text-gray-400 mb-4">
+              An interactive 3D visualization of our solar system built with HTML, CSS, and JavaScript. 
+              This project features animated planets orbiting the sun, demonstrating advanced CSS 3D transforms and animations. 
+              Users can explore the solar system with smooth transitions and educational information about each celestial body. 
+              A perfect blend of education and visual appeal.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-indigo-900 text-indigo-300 px-3 py-1 rounded-full text-xs">3D CSS</span>
+              <span class="bg-indigo-900 text-indigo-300 px-3 py-1 rounded-full text-xs">Animation</span>
+              <span class="bg-indigo-900 text-indigo-300 px-3 py-1 rounded-full text-xs">JavaScript</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Paulolutunmbi/solar-system" target="_blank" class="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://solar-system-rho-ashen.vercel.app/" target="_blank" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Wikipedia Clone -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl">
+          <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
+            <i class="fab fa-wikipedia-w text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-gray-300">Wikipedia Landing Page Clone</h3>
+            <p class="text-gray-400 mb-4">
+              A faithful recreation of Wikipedia's landing page, emphasizing semantic HTML and accessible web design. 
+              This project showcases proficiency in creating information-dense layouts while maintaining clarity and readability. 
+              Features include proper document structure, navigation menus, and responsive design patterns that adapt seamlessly 
+              from desktop to mobile devices.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">HTML5</span>
+              <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">CSS3</span>
+              <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">Semantic Web</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Paulolutunmbi/Wikipedia-clone" target="_blank" class="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://wikipedia-clone-rosy.vercel.app/" target="_blank" class="flex items-center gap-2 bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-lg transition-colors">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-4 sm:px-6 bg-gray-800/50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-white">Interested in Working Together?</h2>
+      <p class="text-gray-400 mb-8">
+        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+      </p>
+      <a href="contact.html" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg">
+        Get In Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-8 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="https://github.com/Paulolutunmbi" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/paul-olutunmbi" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="mailto:oluwatunmbipaul@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+        <a href="https://wa.me/2347071102618" target="_blank" class="text-gray-400 hover:text-green-400 transition-colors">
+          <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Paul Olutunmbi (DevHumble). All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Intersection Observer for project cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '0';
+          entry.target.style.transform = 'translateY(30px)';
+          setTimeout(() => {
+            entry.target.style.transition = 'all 0.6s ease-out';
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, 100);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Paul Olutunmbi | DevHumble</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .slide-in-up {
+      animation: slideInUp 0.6s ease-out;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
+
+  <!-- Fixed Navigation -->
+  <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-transform">
+          DevHumble
+        </a>
+        
+        <ul class="hidden md:flex gap-8 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-blue-400 hover:text-blue-300 transition-colors">About</a></li>
+          <li><a href="project.html" class="hover:text-blue-400 transition-colors">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="flex flex-col gap-3 text-sm font-medium">
+          <li><a href="index.html" class="block hover:text-blue-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="block text-blue-400 hover:text-blue-300 transition-colors">About</a></li>
+          <li><a href="project.html" class="block hover:text-blue-400 transition-colors">Projects</a></li>
+          <li><a href="contact.html" class="block hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero Section -->
+  <section class="pt-32 pb-16 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 slide-in-up">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          About Me
+        </h1>
+        <p class="text-xl text-gray-400">Get to know me better</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Profile Image -->
+        <div class="slide-in-up" style="animation-delay: 0.2s;">
+          <div class="bg-gradient-to-br from-blue-500 to-purple-600 w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img src="assets/profile-pic.jpg" alt="Paul Olutunmbi" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-8xl font-bold text-white\'>PO</div>'">
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="slide-in-up" style="animation-delay: 0.4s;">
+          <h2 class="text-3xl font-bold mb-6 text-blue-400">Hi, I'm Paul Olutunmbi</h2>
+          <p class="text-gray-300 text-lg mb-4 leading-relaxed">
+            Also known as <span class="text-blue-400 font-semibold">DevHumble</span>, I'm a passionate Computer Science student 
+            with a strong interest in web development and software engineering.
+          </p>
+          <p class="text-gray-400 mb-4 leading-relaxed">
+            I specialize in building clean, responsive, and user-friendly websites using modern web technologies. 
+            My journey in tech started with HTML and CSS, and I've since expanded my skills to include Tailwind CSS, 
+            JavaScript, and Python.
+          </p>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            As an aspiring Full-Stack Developer, I'm constantly learning and growing my skillset. I believe in writing 
+            clean, maintainable code and creating solutions that make a real difference. I'm particularly passionate 
+            about problem-solving and turning ideas into functional, beautiful web applications.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <p class="text-blue-400 text-2xl font-bold mb-1">10+</p>
+              <p class="text-gray-400 text-sm">Projects Completed</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <p class="text-blue-400 text-2xl font-bold mb-1">100%</p>
+              <p class="text-gray-400 text-sm">Commitment</p>
+            </div>
+          </div>
+
+          <a href="contact.html" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-16 px-4 sm:px-6 bg-gray-800/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Skills & Technologies
+        </h2>
+        <p class="text-gray-400">Technologies I work with</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Frontend Development -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-blue-500 mb-4">
+            <i class="fas fa-code text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-400">Frontend Development</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> HTML5</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> CSS3</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> JavaScript</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Tailwind CSS</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Bootstrap</li>
+          </ul>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-purple-500 mb-4">
+            <i class="fas fa-laptop-code text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-purple-400">Programming Languages</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Python</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> JavaScript</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> SQL (Learning)</li>
+          </ul>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-green-500 mb-4">
+            <i class="fas fa-tools text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-green-400">Tools & Platforms</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Git & GitHub</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> VS Code</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vercel</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Chrome DevTools</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-pink-500 mb-4">
+            <i class="fas fa-brain text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-pink-400">Soft Skills</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Problem Solving</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Critical Thinking</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Quick Learner</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Attention to Detail</li>
+          </ul>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-yellow-500 mb-4">
+            <i class="fas fa-book-reader text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-yellow-400">Currently Learning</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-spinner text-yellow-500 mr-2"></i> React.js</li>
+            <li class="flex items-center"><i class="fas fa-spinner text-yellow-500 mr-2"></i> Node.js</li>
+            <li class="flex items-center"><i class="fas fa-spinner text-yellow-500 mr-2"></i> Database Management</li>
+          </ul>
+        </div>
+
+        <!-- Interests -->
+        <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition-all duration-300">
+          <div class="text-red-500 mb-4">
+            <i class="fas fa-heart text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-red-400">Interests</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i class="fas fa-arrow-right text-blue-500 mr-2"></i> Web Development</li>
+            <li class="flex items-center"><i class="fas fa-arrow-right text-blue-500 mr-2"></i> UI/UX Design</li>
+            <li class="flex items-center"><i class="fas fa-arrow-right text-blue-500 mr-2"></i> Open Source</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-8 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="https://github.com/Paulolutunmbi" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/paul-olutunmbi" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="mailto:oluwatunmbipaul@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+        <a href="https://wa.me/2347071102618" target="_blank" class="text-gray-400 hover:text-green-400 transition-colors">
+          <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Paul Olutunmbi (DevHumble). All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-in-up');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.skill-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>
